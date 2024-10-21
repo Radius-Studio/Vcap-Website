@@ -1,4 +1,11 @@
-/* CSS Reset */
+/* 
+CSS Reset 
+------------------------------------------------------------------------
+The idea is to reset the default styling set by individual browsers, 
+establishing a default display on all browsers and allowing us to work 
+from complete scratch rather than fighting with the defaults.
+*/
+
 * {
     margin: 0;
     padding: 0;
