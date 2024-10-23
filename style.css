@@ -59,6 +59,21 @@ a {
     color: rgba(232, 240, 240, 1)
 }
 
+.thumbnailMajor {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+}
+
+.thumbnailMajor-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    height: 200px;
+    width: 20%;
+    border-radius: 10px;
+}
+
 .thumbnails {
     display: flex;
     justify-content: space-between;
