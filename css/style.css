@@ -12,7 +12,6 @@ from complete scratch rather than fighting with the defaults.
     border: 0;
     font-size: 100%;
     font: inherit;
-    overflow: hidden;
 }
 
 /* Style sheet */
@@ -22,7 +21,6 @@ body {
     height: auto;
     display: inline-block;
     background: center linear-gradient(90deg, hsl(240, 20%, 25%) -90%, hsl(240, 20%, 5%) 49%, hsl(240, 20%, 25%) 190%);
-    overflow-y: scroll;
 }
 
 #wrapper {
@@ -30,15 +28,8 @@ body {
     margin: auto
 }
 
-.DivToScroll{   
-    background-color: #F5F5F5;
-    border: 1px solid #DDDDDD;
-    border-radius: 4px 0 4px 0;
-    color: #3B3C3E;
-    font-size: 12px;
-    font-weight: bold;
-    left: -1px;
-    padding: 10px 7px 5px;
+.scroll-bar{
+    overflow-y: 400;
 }
 
 .nav-bar {
@@ -109,6 +100,7 @@ a {
    aspect-ratio: 16 / 9;
    height: auto;
    width: 100%;
+   border-radius: 10px
 }
 
 /* Minor Thumbnails */
@@ -137,6 +129,7 @@ a {
     aspect-ratio: 16 / 9;
     height: auto;
     width: 100%;
+    border-radius: 10px;
  }
 
  /* Categories */
