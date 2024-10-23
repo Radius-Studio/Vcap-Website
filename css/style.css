@@ -59,12 +59,11 @@ a {
     color: rgba(232, 240, 240, 1)
 }
 
-img {
-    display: block;
-    max-width:230px;
-    max-height:95px;
-    width: auto;
-    height: auto;
+.logo {
+    max-width: 95px;
+    max-height: 60px;
+    min-width: 95px;
+    min-height: 60px;
   }
 
 .spacer {
@@ -72,6 +71,7 @@ img {
     margin-right: 10px;
 }
 
+/* Major */
 .thumbnailMajor {
     display: flex;
     justify-content: space-between;
@@ -91,6 +91,15 @@ img {
     min-height: 169px;
 }
 
+.major-thumbnail {
+   min-width: 300px;
+   min-height: 169px;
+   aspect-ratio: 16 / 9;
+   height: auto;
+   width: 100%;
+}
+
+/* Minor */
 .thumbnailMinor {
     display: flex;
     justify-content: space-between;
@@ -110,3 +119,10 @@ img {
     min-height: 78px;
 }
 
+.minor-thumbnail {
+    min-width: 139px;
+    min-height: 78px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    width: 100%;
+ }
