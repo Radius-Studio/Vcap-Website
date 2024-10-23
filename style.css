@@ -59,6 +59,14 @@ a {
     color: rgba(232, 240, 240, 1)
 }
 
+img {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+  }
+
 .thumbnailMajor {
     display: flex;
     justify-content: space-between;
@@ -69,19 +77,20 @@ a {
 .thumbnailMajor-box {
     background-color: rgba(255, 255, 255, 0.4);
     margin: 10px;
-    height: 200px;
-    width: 20%;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 10px;
+    flex: 3 .5 575px;
 }
 
-.thumbnails {
+.thumbnailMinor {
     display: flex;
     justify-content: space-between;
     height: auto;
     width: auto;
 }
 
-.thumbnail-box {
+.thumbnailMinor-box {
     background-color: rgba(255, 255, 255, 0.4);
     margin: 10px;
     height: 200px;
