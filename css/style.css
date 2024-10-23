@@ -71,7 +71,7 @@ a {
     margin-right: 10px;
 }
 
-/* Major */
+/* Major Thumbnails */
 .thumbnailMajor {
     display: flex;
     justify-content: space-between;
@@ -99,7 +99,7 @@ a {
    width: 100%;
 }
 
-/* Minor */
+/* Minor Thumbnails */
 .thumbnailMinor {
     display: flex;
     justify-content: space-between;
@@ -125,4 +125,16 @@ a {
     aspect-ratio: 16 / 9;
     height: auto;
     width: 100%;
+ }
+
+ /* Categories */
+
+ .minor-category {
+    color: white;
+    font-size: 20px;
+ }
+
+ .major-category {
+    color: white;
+    font-size: 50px;
  }
