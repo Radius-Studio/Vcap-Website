@@ -20,7 +20,9 @@ from complete scratch rather than fighting with the defaults.
 body {
     width: auto;
     height: auto;
-    display: flex;
+    display: inline-block;
+    width: 100%;
+    height: auto;
     background: center linear-gradient(90deg, hsl(240, 20%, 25%) -90%, hsl(240, 20%, 5%) 49%, hsl(240, 20%, 25%) 190%);
 }
 
@@ -56,3 +58,19 @@ body {
 a {
     color: rgba(232, 240, 240, 1)
 }
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+}
+
+.thumbnail-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    height: 200px;
+    width: 20%;
+    border-radius: 10px;
+}
+
