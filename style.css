@@ -18,23 +18,23 @@ from complete scratch rather than fighting with the defaults.
 /* Style sheet */
 
 body {
-    width: auto;
-    height: auto;
-    display: inline-block;
     width: 100%;
     height: auto;
+    display: inline-block;
     background: center linear-gradient(90deg, hsl(240, 20%, 25%) -90%, hsl(240, 20%, 5%) 49%, hsl(240, 20%, 25%) 190%);
+}
+
+#wrapper {
+    padding: 0px 20px 20px 20px;
+    margin: auto
 }
 
 .nav-bar {
     background-color: rgb(37, 38, 51);
     display: flex;
     justify-content: space-between;
-}
-
-#nav-bar {
-    width: 100%;
-    height: 100%;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .title {
@@ -67,6 +67,11 @@ img {
     height: auto;
   }
 
+.spacer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .thumbnailMajor {
     display: flex;
     justify-content: space-between;
@@ -76,11 +81,14 @@ img {
 
 .thumbnailMajor-box {
     background-color: rgba(255, 255, 255, 0.4);
-    margin: 10px;
-    height: 400px;
+    aspect-ratio: 16 / 9;
+    margin: 10px 0px 10px 0px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    flex: 3 .5 575px;
+    flex-grow: 3;
+    flex-shrink: .3;
+    min-width: 300px;
+    min-height: 169px;
 }
 
 .thumbnailMinor {
@@ -92,11 +100,13 @@ img {
 
 .thumbnailMinor-box {
     background-color: rgba(255, 255, 255, 0.4);
-    margin: 10px;
-    height: 200px;
-    width: 20%;
+    aspect-ratio: 16 / 9;
+    margin: 10px 0px 10px 0px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    flex: 0 0 375px
+    flex-grow: 3;
+    flex-shrink: .3;
+    min-width: 139px;
+    min-height: 78px;
 }
 
