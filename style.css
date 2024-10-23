@@ -71,6 +71,8 @@ a {
     margin: 10px;
     height: 200px;
     width: 20%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 10px;
+    flex: 0 0 375px
 }
 
