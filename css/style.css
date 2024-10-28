@@ -12,10 +12,12 @@ from complete scratch rather than fighting with the defaults.
     border: 0;
     font-size: 100%;
     font: inherit;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
 }
 
 /* Style sheet */
-
 body {
     width: auto;
     height: auto;
@@ -62,6 +64,7 @@ body {
 
 .service-request:hover {
     background-color: rgba(232, 240, 240, 0.5);
+    transform: scale(1.1);
 }
 
 a {
@@ -107,9 +110,6 @@ a {
    width: 100%;
    border-radius: 10px;
    cursor: pointer; 
-   -webkit-transition-property: all; 
-   -webkit-transition-duration: 0.3s; 
-   -webkit-transition-timing-function: ease; 
 }
 
 .major-thumbnail:hover {
@@ -132,9 +132,6 @@ a {
     height: auto;
     width: 100%;
     border-radius: 10px;
-    -webkit-transition-property: all; 
-    -webkit-transition-duration: 0.3s; 
-    -webkit-transition-timing-function: ease; 
  }
 
  .thumbnailMinor-box {
@@ -153,7 +150,6 @@ a {
 }
 
  /* Categories */
-
  .minor-category {
     color: white;
     font-size: 20px;
