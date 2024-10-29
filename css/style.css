@@ -38,6 +38,7 @@ body {
     z-index: 10;
 }
 
+/* Splash Screen */
 .splash-screen-img-properties {
     object-fit: cover;
     object-position: 50% 60%;
@@ -69,23 +70,38 @@ body {
 .splash-screen-txt{
     color: aliceblue;
     text-align: left;
-    width: 190px;
-    transform: translate(20px, -120px);
+    font-size: 25px;
+    width: 350px;
+    transform: translate(20px, -130px);
     grid-area: 1 / 1;
 }
 
 .splash-PlayVideo {
     transform: auto;
-    transform: translate(-55px, -80px);
+    transform: translate(20px, -150px);
     grid-area: 1 / 1;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(124, 132, 150);
+    margin-top: 30px;
 }
 
 .splash-button {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
 }
 
+.splash-PlayVideo:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.splash-button:hover {
+    color: black;
+    border: 1px solid white;
+}
+
+
+/* Body */
 #wrapper {
     padding-left:20px;
     padding-right: 20px;
@@ -112,11 +128,16 @@ body {
 
 .service-request:hover {
     background-color: rgba(232, 240, 240, 0.5);
+    color: black;
     transform: scale(1.1);
 }
 
 a {
     color: rgba(232, 240, 240, 1)
+}
+
+a:hover {
+    color: black;
 }
 
 .logo {
@@ -206,4 +227,5 @@ a {
  .major-category {
     color: white;
     font-size: 35px;
+    padding-top: 5px;
  }
