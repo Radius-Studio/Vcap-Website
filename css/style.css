@@ -18,11 +18,6 @@ from complete scratch rather than fighting with the defaults.
 }
 
 /* Style sheet */
-body {
-    width: auto;
-    height: auto;
-    padding-bottom: 50px;
-}
 
 .nav-bar {
     background-color: rgb(37, 38, 51);
@@ -262,4 +257,13 @@ a:hover {
     color: white;
     font-size: 35px;
     padding-top: 5px;
+ }
+
+ .footer {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 30px;
+    background-color: black;
  }
