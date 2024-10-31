@@ -209,6 +209,7 @@ from complete scratch rather than fighting with the defaults.
     border-radius: 10px;
     flex-grow: 3;
     flex-shrink: .3;
+    width: 100%;
     min-width: 300px;
     min-height: 169px;
     cursor: pointer; 
@@ -218,7 +219,6 @@ from complete scratch rather than fighting with the defaults.
    min-width: 300px;
    min-height: 169px;
    aspect-ratio: 16 / 9;
-   height: auto;
    width: 100%;
    border-radius: 10px;
    cursor: pointer; 
