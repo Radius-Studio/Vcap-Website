@@ -7,3 +7,8 @@ Channel ID: UC1lmbL4tbFYvSNy7G7SGDfQ
 Uploads ID: UU1lmbL4tbFYvSNy7G7SGDfQ
 
 Fetch URL: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId=UU1lmbL4tbFYvSNy7G7SGDfQ&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE
+
+
+Tutorials:
+https://www.youtube.com/watch?v=Bzw2T18YDJ4 (YouTube Data API & Fetch API)
+https://www.youtube.com/shorts/_204o5SxjTs (Run Console Log Output in Visual Studio Code)
