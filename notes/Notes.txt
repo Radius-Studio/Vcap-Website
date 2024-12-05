@@ -1,0 +1,9 @@
+API key: AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE
+
+Channel URL: https://www.youtube.com/@DrexelUniversityVCaP
+
+Channel ID: UC1lmbL4tbFYvSNy7G7SGDfQ
+
+Uploads ID: UU1lmbL4tbFYvSNy7G7SGDfQ
+
+Fetch URL: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId=UU1lmbL4tbFYvSNy7G7SGDfQ&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE
