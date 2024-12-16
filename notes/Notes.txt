@@ -12,3 +12,4 @@ Fetch URL: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&
 Tutorials:
 https://www.youtube.com/watch?v=Bzw2T18YDJ4 (YouTube Data API & Fetch API)
 https://www.youtube.com/shorts/_204o5SxjTs (Run Console Log Output in Visual Studio Code)
+https://www.youtube.com/watch?v=phWxA89Dy94 (Learn Flexbox CSS)

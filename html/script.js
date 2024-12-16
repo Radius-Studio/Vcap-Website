@@ -1,8 +1,25 @@
-const videoSection = document.querySelector('section')
+const videoSection = document.querySelector("section");
+const loader = document.querySelector('.loader-box')
 
-fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId=UU1lmbL4tbFYvSNy7G7SGDfQ&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE')
-.then(res => res.json())
-.then(data=>{
-    videoSection.innerHTML = data.items[0].title
-    console.log(data.items[0]);
-})
+
+setTimeout(getVideos, 3000)
+
+/* In the fetch link change array result value max result to add more videos*/
+function getVideos() {
+fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=UU1lmbL4tbFYvSNy7G7SGDfQ&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE'
+)
+    .then(res => res.json())
+    .then(data=>{
+        loader.style.display = 'none';
+        data.items.forEach(el => {
+            videoSection.innerHTML += `
+                <a href="https://www.youtube.com/watch?v=${el.snippet.resourceId.videoId}" class="yt-video">
+                    <img src="${el.snippet.thumbnails.high.url}" />
+                </a>`;
+        });
+    }).catch(err => {
+        loader.computedStyleMap.display = 'none';
+        console.log(data.items[0]);
+        videoSection.innerHTML = '<h3>Sorry somthing went wrong, try again later</h3>'
+    });
+}
