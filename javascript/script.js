@@ -1,4 +1,4 @@
-const videoSection = document.querySelector("section");
+const videoSection = document.querySelector(".yt-video-section");
 const loader = document.querySelector('.loader-box')
 
 
@@ -13,9 +13,11 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
         loader.style.display = 'none';
         data.items.forEach(el => {
             videoSection.innerHTML += `
+            <div class="yt-video-box">
                 <a href="https://www.youtube.com/watch?v=${el.snippet.resourceId.videoId}" class="yt-video">
                     <img src="${el.snippet.thumbnails.high.url}" />
-                </a>`;
+                </a>
+            </div>`;
         });
     }).catch(err => {
         loader.computedStyleMap.display = 'none';

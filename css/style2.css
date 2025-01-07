@@ -31,6 +31,10 @@ from complete scratch rather than fighting with the defaults.
     z-index: 10;
 }
 
+.scroll-bar{
+    overflow-y: 400px;
+}
+
 .splashscreen-img-parent {
     display: grid;
 }
@@ -176,39 +180,37 @@ from complete scratch rather than fighting with the defaults.
 
 /* Body */
 #wrapper {
-    display: grid;
-    place-items: center;
+    padding-left:60px;
+    padding-right: 60px;
+    margin: auto;
     background-color: hsl(240, 20%, 5%);
+}
+
+.yt-video-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yt-video-box {
+    aspect-ratio: 16 / 9;
+    display: inline-flex;
+    place-items: center;
+    border-radius: 15px; 
+}
+.yt-video {
+    height: auto;
+    cursor: pointer;
 }
 
 .loader-box {
     display: grid;
     place-items: center;
+    aspect-ratio: 16 / 9;
     width: 100%;
     height: 300px;
     background: #333;
     border-radius: 15px;
     overflow: hidden;
-}
-
-.yt-video {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-}
-
-.yt-video img {
-    aspect-ratio: 16 / 9;
-    margin: 10px 0px 10px 0px;
-    border-radius: 10px;
-    flex-grow: 3;
-    flex-shrink: .3;
-    width: 100%;
-    min-width: 300px;
-    min-height: 169px;
-    cursor: pointer;
-    background-color: black;
 }
 
 .loader {
