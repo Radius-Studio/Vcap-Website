@@ -192,15 +192,23 @@ from complete scratch rather than fighting with the defaults.
 }
 
 .yt-video {
-    text-decoration: none;
-    background: #333;
-    border-radius: 15px;
-    overflow: hidden;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
 }
 
 .yt-video img {
+    aspect-ratio: 16 / 9;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    flex-grow: 3;
+    flex-shrink: .3;
     width: 100%;
+    min-width: 300px;
+    min-height: 169px;
+    cursor: pointer;
+    background-color: black;
 }
 
 .loader {
