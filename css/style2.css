@@ -23,13 +23,74 @@ from complete scratch rather than fighting with the defaults.
     background-color: rgb(37, 38, 51);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
     border-radius: 0px 0px 10px 10px;
     position: fixed;
     left: 60px;
     right: 60px;
     z-index: 10;
     min-width: max-content;
+    
+}
+
+.title {
+    color: rgba(232, 240, 240, 1);
+    padding: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+    .title {
+        color: rgba(232, 240, 240, 1);
+        padding: 20px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
+.service-request {
+    color: rgba(232, 240, 240, 1);
+    background-color: rgba(232, 240, 255, 0.3);
+    padding: 5px 10px 5px 10px;
+    margin: 15px 20px 15px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+    .service-request {
+        color: rgba(232, 240, 240, 1);
+        padding: 5px 10px 5px 10px;
+        margin: 15px 20px 15px 10px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
+.service-request:hover {
+    background-color: rgba(232, 240, 240, 0.5);
+    color: black;
+    transform: scale(1.08);
+}
+
+.req-ser-link {
+    color: rgba(232, 240, 240, 1);
+}
+
+.logo {
+    max-width: 95px;
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 660px) {
+    .logo {
+        padding-top: 5px;
+        max-width: 65px;
+        max-height: 40px;
+        margin-right: 10px;
+    }
 }
 
 .scroll-bar{
@@ -148,37 +209,6 @@ from complete scratch rather than fighting with the defaults.
     font-size: 20px;
 }
 
-.title {
-    color: rgba(232, 240, 240, 1);
-    padding: 20px;
-    font-size: 25px;
-}
-
-.service-request {
-    color: rgba(232, 240, 240, 1);
-    background-color: rgba(232, 240, 255, 0.3);
-    padding: 5px 10px 5px 10px;
-    margin: 15px 20px 15px 10px;
-    border-radius: 10px;
-}
-
-.service-request:hover {
-    background-color: rgba(232, 240, 240, 0.5);
-    color: black;
-    transform: scale(1.08);
-}
-
-.req-ser-link {
-    color: rgba(232, 240, 240, 1);
-}
-
-.logo {
-    max-width: 95px;
-    max-height: 60px;
-    min-width: 95px;
-    min-height: 60px;
-}
-
 /* Body */
 #wrapper {
     padding-left:60px;
@@ -187,7 +217,15 @@ from complete scratch rather than fighting with the defaults.
     background-color: hsl(240, 20%, 5%);
 }
 
+.recent-videos {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
 .yt-video-section {
+    overflow:hidden;
     display: flex;
     justify-content: space-between;
     height: auto;
@@ -203,16 +241,17 @@ from complete scratch rather than fighting with the defaults.
 .yt-video {
     aspect-ratio: 16 / 9;
     height: auto;
-    width: 100%;
     min-width: 300px;
     min-height: 169px;
     border-radius: 15px;
     flex-grow: 3;
     flex-shrink: .3;
+    cursor: pointer; 
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
-.yt-video img {
-    display: flex;
+.yt-video:hover {
+    border: 2px solid rgb(255, 255, 255); 
 }
 
 .loader-box {
@@ -232,7 +271,7 @@ from complete scratch rather than fighting with the defaults.
     border: 5px solid #FFF;
     border-bottom-color: transparent;
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
 }
