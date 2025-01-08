@@ -13,11 +13,12 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
         loader.style.display = 'none';
         data.items.forEach(el => {
             videoSection.innerHTML += `
-            <div>
-                <a href="https://www.youtube.com/watch?v=${el.snippet.resourceId.videoId}" class="yt-video">
-                    <img class="yt-video" src="${el.snippet.thumbnails.high.url}" />
-                </a>
-            </div>`;
+            <iframe class="yt-video"
+            src="https://www.youtube.com/embed/${el.snippet.resourceId.videoId}?si=AZ53OHttNtNd5_1p" alt=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            `;
         });
     }).catch(err => {
         loader.computedStyleMap.display = 'none';
