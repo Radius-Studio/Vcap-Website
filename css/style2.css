@@ -211,6 +211,10 @@ from complete scratch rather than fighting with the defaults.
     flex-shrink: .3;
 }
 
+.yt-video img {
+    display: flex;
+}
+
 .loader-box {
     display: grid;
     place-items: center;
