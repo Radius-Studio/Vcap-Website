@@ -29,6 +29,7 @@ from complete scratch rather than fighting with the defaults.
     left: 60px;
     right: 60px;
     z-index: 10;
+    min-width: max-content;
 }
 
 .scroll-bar{
@@ -189,17 +190,25 @@ from complete scratch rather than fighting with the defaults.
 .yt-video-section {
     display: flex;
     justify-content: space-between;
+    height: auto;
+    width: auto;
+    gap: 30px;
+    overflow-x: scroll;
 }
 
-.yt-video-box {
-    aspect-ratio: 16 / 9;
-    display: inline-flex;
-    place-items: center;
-    border-radius: 15px; 
+.yt-video-section::-webkit-scrollbar {
+    display: none;
 }
+
 .yt-video {
+    aspect-ratio: 16 / 9;
     height: auto;
-    cursor: pointer;
+    width: 100%;
+    min-width: 300px;
+    min-height: 169px;
+    border-radius: 15px;
+    flex-grow: 3;
+    flex-shrink: .3;
 }
 
 .loader-box {

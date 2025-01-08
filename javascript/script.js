@@ -13,9 +13,9 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
         loader.style.display = 'none';
         data.items.forEach(el => {
             videoSection.innerHTML += `
-            <div class="yt-video-box">
+            <div>
                 <a href="https://www.youtube.com/watch?v=${el.snippet.resourceId.videoId}" class="yt-video">
-                    <img src="${el.snippet.thumbnails.high.url}" />
+                    <img class="yt-video" src="${el.snippet.thumbnails.high.url}" />
                 </a>
             </div>`;
         });
