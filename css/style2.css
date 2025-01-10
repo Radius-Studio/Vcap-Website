@@ -213,7 +213,7 @@ from complete scratch rather than fighting with the defaults.
 #wrapper {
     padding-left:60px;
     padding-right: 60px;
-    margin: auto;
+    margin: 15px;
     background-color: hsl(240, 20%, 5%);
 }
 
@@ -289,6 +289,10 @@ from complete scratch rather than fighting with the defaults.
 
 .yt-video0:hover, .yt-video1:hover, .yt-video2:hover {
     border: 2px solid rgb(255, 255, 255);
+}
+
+.yt-video-section2 {
+    margin-bottom: 15px;
 }
 
 .loader-box {
