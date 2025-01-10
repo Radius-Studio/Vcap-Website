@@ -1,7 +1,8 @@
 const videoSection = document.querySelector('.yt-video-section');
-const loader = document.querySelector('.loader-box')
+const loader = document.querySelector('.loader-box');
 
-setTimeout(getVideos, 3000)
+setTimeout(getVideos, 3000);
+loadScript('/javascript/script0.js');
 
 /* In the fetch link change array result value max result to add more videos*/
 function getVideos() {
@@ -29,6 +30,15 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
         console.log(err);
         videoSection.innerHTML = '<h3>Sorry somthing went wrong, try again later</h3>'
     });
+}
+
+function loadScript(url)
+{    
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    head.appendChild(script);
 }
 
 /*sandbox="allow-scripts" "allow-presentation" "allow-popups" "allow-popups-to-escape-sandbox"*/
