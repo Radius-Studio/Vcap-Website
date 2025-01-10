@@ -3,6 +3,8 @@ const loader = document.querySelector('.loader-box');
 
 setTimeout(getVideos, 3000);
 loadScript('/javascript/script0.js');
+loadScript('/javascript/script1.js');
+loadScript('/javascript/script2.js');
 
 /* In the fetch link change array result value max result to add more videos*/
 function getVideos() {

@@ -262,8 +262,8 @@ from complete scratch rather than fighting with the defaults.
     margin-top: 15px;
 }
 
-.yt-video-section0 {
-    overflow:hidden;
+.yt-video-section0, .yt-video-section1, .yt-video-section2 {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     height: auto;
@@ -272,15 +272,14 @@ from complete scratch rather than fighting with the defaults.
     overflow-x: scroll;
 }
 
-.yt-video-section0::-webkit-scrollbar {
+.yt-video-section0::-webkit-scrollbar, .yt-video-section1::-webkit-scrollbar, .yt-video-section2::-webkit-scrollbar {
     display: none;
 }
 
-.yt-video0 {
-    min-width: 96px;
-    min-height: 54px;
-    max-width: 96px;
-    max-height: 54px;
+.yt-video0, .yt-video1, .yt-video2 {
+    aspect-ratio: 16 / 9;
+    min-width: 139px;
+    min-height: 78px;
     border-radius: 15px;
     flex-grow: 3;
     flex-shrink: .3;
@@ -288,7 +287,7 @@ from complete scratch rather than fighting with the defaults.
     border: 2px solid rgba(0, 0, 0, 0);
 }
 
-.yt-video0:hover {
+.yt-video0:hover, .yt-video1:hover, .yt-video2:hover {
     border: 2px solid rgb(255, 255, 255);
 }
 
