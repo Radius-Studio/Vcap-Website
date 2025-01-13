@@ -262,13 +262,13 @@ from complete scratch rather than fighting with the defaults.
 }
 
 .yt-video-section0, .yt-video-section1, .yt-video-section2 {
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     height: auto;
     width: auto;
     gap: 30px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .yt-video-section0::-webkit-scrollbar, .yt-video-section1::-webkit-scrollbar, .yt-video-section2::-webkit-scrollbar {
@@ -291,7 +291,7 @@ from complete scratch rather than fighting with the defaults.
 }
 
 .yt-video-section2 {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .loader-box {

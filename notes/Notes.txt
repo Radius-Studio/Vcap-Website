@@ -17,3 +17,13 @@ https://www.youtube.com/watch?v=phWxA89Dy94 (Learn Flexbox CSS)
 
 Useful guides:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe (Iframe permissions)
+
+To Do:
+Horizontal scrolling without bars or shortcut commands
+Optimize organize and trim down code to be more professional - Adding more comments
+Hamburger menu for a second page
+About us page with request our services link to the ticket system
+Change javascript functions so they pull from different playlists
+Change splash screen elements
+Add carousel to wrapper and or video elements
+Changing font
