@@ -13,6 +13,8 @@ Tutorials:
 https://www.youtube.com/watch?v=Bzw2T18YDJ4 (YouTube Data API & Fetch API)
 https://www.youtube.com/shorts/_204o5SxjTs (Run Console Log Output in Visual Studio Code)
 https://www.youtube.com/watch?v=phWxA89Dy94 (Learn Flexbox CSS)
+https://codepen.io/Min11Benja/pen/BaGXQdq?editors=0010 (Animated Image Carousel With CSS/JavaScript)
+https://dev.to/min11benja/how-to-make-a-horizontal-moving-carousel-with-vanilla-js-ts-elc (horizontal moving carousel)
 
 
 Useful guides:
