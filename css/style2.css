@@ -213,7 +213,6 @@ from complete scratch rather than fighting with the defaults.
 #wrapper {
     padding-left:60px;
     padding-right: 60px;
-    margin: 15px;
     background-color: hsl(240, 20%, 5%);
 }
 
