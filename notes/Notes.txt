@@ -21,14 +21,13 @@ Useful guides:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe (Iframe permissions)
 
 To Do:
-Changing font
 Optimize organize and trim down code to be more professional - Adding more comments
+-
+Changing font
 Hamburger menu for a second page
 About us page with request our services link to the ticket system
-
 -
 Change javascript functions so they pull from different playlists
 Change splash screen elements
 Add carousel to wrapper and or video elements
 Horizontal scrolling without bars or shortcut commands
--
