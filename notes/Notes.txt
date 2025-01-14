@@ -32,3 +32,4 @@ Change javascript functions so they pull from different playlists
 Change splash screen elements
 Add carousel to wrapper and or video elements
 Horizontal scrolling without bars or shortcut commands
+Fix loading bar to load over every video element individually
