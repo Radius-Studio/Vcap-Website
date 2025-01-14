@@ -19,6 +19,7 @@ https://dev.to/min11benja/how-to-make-a-horizontal-moving-carousel-with-vanilla-
 
 Useful guides:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe (Iframe permissions)
+https://openjavascript.info/2021/09/02/create-a-rotating-image-carousel-with-user-controls/ (Splashscreen carousel)
 
 To Do:
 Optimize organize and trim down code to be more professional - Adding more comments
