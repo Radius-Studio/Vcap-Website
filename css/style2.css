@@ -98,15 +98,15 @@ from complete scratch rather than fighting with the defaults.
 }
 
 #carousel {
-    max-height: 650px;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    height: 650px;
 }
 
 #carousel img {
     display: none;
     width: inherit;
     height: inherit;
+    object-fit: cover;
 }
 
 #carousel img[class="active"] {
@@ -163,6 +163,7 @@ to {opacity: 1;}
     background-color: white;
 }
 
+/*
 .splashscreen-img-parent {
     display: grid;
 }
@@ -182,7 +183,9 @@ to {opacity: 1;}
     display: block;
 }
 
+*/
 /* Splash Screen */
+/*
 .splash-screen-img-properties {
     object-fit: cover;
     object-position: 50% 60%;
@@ -275,10 +278,13 @@ to {opacity: 1;}
     font-size: 20px;
 }
 
+*/
+
 /* Body */
 #wrapper {
     padding-left:60px;
     padding-right: 60px;
+    padding-top: 30px;
     background-color: hsl(240, 20%, 5%);
 }
 
