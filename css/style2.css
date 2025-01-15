@@ -110,7 +110,7 @@ from complete scratch rather than fighting with the defaults.
 }
 
 #carousel img[class="active"] {
-    display: block;
+    display: flex;
     animation-name: fadeIn;
     animation-duration: 1.5s;
 }
@@ -131,8 +131,37 @@ to {opacity: 1;}
 }
 
 #nav * {
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
+
+#img-items {
+    width: inherit;
+    height: inherit;
+}
+
+.gradient-90deg {
+    height: inherit;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(0, 0, 0, .9) 5%, rgba(0, 0, 0, .1) 55%);
+    max-height: 650px;
+    aspect-ratio: 16 / 10;
+    flex-grow: 3;
+    flex-shrink: .3;
+    min-width: 200px;
+    z-index: 1;
+    position: absolute;
+}
+
+.gradient-0deg {
+    height: inherit;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(0, 0, 0, .7) 15%, rgba(0, 0, 0, .05) 35%);
+    max-height: 650px;
+    aspect-ratio: 16 / 10;
+    flex-grow: 3;
+    flex-shrink: .3;
+    z-index: 2;
+    position: absolute;
 }
 
 #desc {
