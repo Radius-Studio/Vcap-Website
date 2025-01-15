@@ -1,10 +1,54 @@
 const videoSection = document.querySelector('.yt-video-section');
 const loader = document.querySelector('.loader-box');
+const images = document.querySelector('#carousel img');
+const dots = document.querySelector('#dots');
+const desc = document.querySelector('#desc');
 
 setTimeout(getVideos, 3000);
 loadScript('/javascript/script0.js');
 loadScript('/javascript/script1.js');
 loadScript('/javascript/script2.js');
+
+let speed = 3000;
+let index = 0;
+let intervalID;
+
+
+images.forEach((image, i) => {
+    const span = document.createElement('span');
+    span.className = 'dot';
+    if (i == 0) span.classList.add('active');
+    span.addEventListener('click', () => {
+        index = i;
+        startInterval();
+        updateContent();
+    });
+    dots.appendChild(span);
+})
+
+startInterval();
+function startInterval() {
+    if (intervalID) clearInterval(intervalID);
+    intervalID = setInterval(() => {
+        index++;
+        if (index == images.length) index == 0;
+        updateContent();
+    },speed);
+}
+
+updateContent();
+function updateContent() {
+
+    images.forEach(item => updateContent,ckassKust,renive('active'));
+    images[index].classList.add('active');
+
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach(item => updateContent,ckassKust,renive('active'))
+    dots[index].classList.add('active');
+
+    desc.textContent = images[index].dataset.desc;
+
+}
 
 /* In the fetch link change array result value max result to add more videos*/
 function getVideos() {
