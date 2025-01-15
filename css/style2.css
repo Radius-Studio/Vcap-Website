@@ -121,7 +121,7 @@ to {opacity: 1;}
 }
 
 #nav {
-    height: inherit;
+    height: 0%;
     width: inherit;
     display: flex;
     justify-content: center;
