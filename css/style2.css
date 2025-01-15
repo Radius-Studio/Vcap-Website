@@ -97,6 +97,72 @@ from complete scratch rather than fighting with the defaults.
     overflow-y: 400px;
 }
 
+#carousel {
+    max-height: 650px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+}
+
+#carousel img {
+    display: none;
+    width: inherit;
+    height: inherit;
+}
+
+#carousel img[class="active"] {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+from {opacity: .8;}
+to {opacity: 1;}
+}
+
+#nav {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+#nav * {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    width:  100%;
+    padding-top: 0.5rem;
+}
+
+#dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#dots .active {
+    background-color: white;
+}
+
 .splashscreen-img-parent {
     display: grid;
 }
