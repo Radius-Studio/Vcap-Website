@@ -6,8 +6,9 @@ Channel ID: UC1lmbL4tbFYvSNy7G7SGDfQ
 
 Uploads ID: UU1lmbL4tbFYvSNy7G7SGDfQ
 
-Fetch URL: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId=UU1lmbL4tbFYvSNy7G7SGDfQ&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE
-
+Fetch URL Home-Page: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=15&playlistId=UU1lmbL4tbFYvSNy7G7SGDfQ&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE
+Fetch URL Playlists: https://youtube.googleapis.com/youtube/v3/playlists?part=contentDetails%2C%20snippet&channelId=UC1lmbL4tbFYvSNy7G7SGDfQ&maxResults=8&key=AIzaSyCUD45Edy_JEXZODqBQtpblSuNOE8VYfYE
+Fetch URL Playlist-PlaylistItems:
 
 Tutorials:
 https://www.youtube.com/watch?v=Bzw2T18YDJ4 (YouTube Data API & Fetch API)
@@ -30,10 +31,15 @@ Hamburger menu for a second page
 About us page with request our services link to the ticket system
 -
 Horizontal scrolling without bars or shortcut commands
-Change javascript functions so they pull from different playlists
-Fix loading bar to load over every video element individually
-Section title auto updates with playlistId
+All font shrinks when page gets smaller
+Optional - Fix loading bar to load over every video element individually
+
 
 Completed:
 Change splash screen elements
 Add carousel to wrapper and or video elements
+Section title auto updates with playlistId
+Change javascript functions so they pull from different playlists
+Removing specific videos from playlistId
+Identifying individual playlists
+Nav bar resizes when shrunk

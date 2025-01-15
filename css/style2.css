@@ -19,7 +19,14 @@
     right: 60px;
     z-index: 10;
     min-width: max-content;
-    
+}
+
+@media screen and (max-width: 460px) {
+    .nav-bar {
+        left: 0px;
+        right: 0px;
+        border-radius: 0px;
+    }
 }
 
 .title {
@@ -185,7 +192,7 @@ to {opacity: 1;}
 #wrapper {
     padding-left:60px;
     padding-right: 60px;
-    padding-top: 8px;
+    padding-top: 4px;
     background-color: hsl(240, 20%, 5%);
 }
 
@@ -226,7 +233,7 @@ to {opacity: 1;}
     border: 2px solid rgb(255, 255, 255);
 }
 
-.section-title {
+.section-title, .section-title1, .section-title2 {
     color: white;
     font-weight: 500;
     font-size: 30px;
