@@ -26,10 +26,11 @@ To Do:
 Publish to GitHub-pages
 Optimize organize and trim down code to be more professional - Adding more comments
 -
+WIP:
 Changing font
 Hamburger menu for a second page
 About us page with request our services link to the ticket system
-
+-
 Completed:
 Change splash screen elements
 Add carousel to wrapper and or video elements
