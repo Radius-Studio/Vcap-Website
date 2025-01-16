@@ -29,11 +29,6 @@ Optimize organize and trim down code to be more professional - Adding more comme
 Changing font
 Hamburger menu for a second page
 About us page with request our services link to the ticket system
--
-Horizontal scrolling without bars or shortcut commands
-All font shrinks when page gets smaller
-Optional - Fix loading bar to load over every video element individually
-
 
 Completed:
 Change splash screen elements
@@ -43,3 +38,6 @@ Change javascript functions so they pull from different playlists
 Removing specific videos from playlistId
 Identifying individual playlists
 Nav bar resizes when shrunk
+All font shrinks when page gets smaller
+Fix loading bar to load over every video element individually *not done, not needed
+Horizontal scrolling without bars or shortcut commands

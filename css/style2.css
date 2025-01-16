@@ -21,7 +21,7 @@
     min-width: max-content;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 660px) {
     .nav-bar {
         left: 0px;
         right: 0px;
@@ -167,6 +167,13 @@ to {opacity: 1;}
     text-align: center;
     width:  100%;
     padding-top: 0.5rem;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+    #desc {
+        font-size: 20px;
+    }
 }
 
 #dots {
@@ -199,8 +206,14 @@ to {opacity: 1;}
 .recent-videos {
     color: #FFF;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 660px) {
+    .recent-videos {
+        font-size: 20px;
+    }
 }
 
 .yt-video-section {
@@ -214,7 +227,29 @@ to {opacity: 1;}
 }
 
 .yt-video-section::-webkit-scrollbar {
-    display: none;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ddd;
+    justify-content: center;
+}
+
+.yt-video-section::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+@media screen {
+    .yt-video-section:hover::-webkit-scrollbar {
+        min-height: 12px;
+    }
+}
+
+
+
+@media screen and (min-width: 1110px) {
+    .yt-video-section::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .yt-video {
@@ -241,6 +276,30 @@ to {opacity: 1;}
     margin-top: 15px;
 }
 
+
+.yt-video-section0::-webkit-scrollbar, .yt-video-section1::-webkit-scrollbar, .yt-video-section2::-webkit-scrollbar {
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ddd;
+    justify-content: center;
+}
+
+.yt-video-section0::-webkit-scrollbar-thumb, .yt-video-section1::-webkit-scrollbar-thumb, .yt-video-section2::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+@media screen {
+    .yt-video-section0:hover::-webkit-scrollbar, .yt-video-section1:hover::-webkit-scrollbar, .yt-video-section2:hover::-webkit-scrollbar {
+        min-height: 12px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .section-title, .section-title1, .section-title2 {
+        font-size: 15px;
+    }
+}
 .yt-video-section0, .yt-video-section1, .yt-video-section2 {
     display: flex;
     justify-content: space-between;
@@ -249,10 +308,6 @@ to {opacity: 1;}
     gap: 30px;
     overflow-x: auto;
     overflow-y: hidden;
-}
-
-.yt-video-section0::-webkit-scrollbar, .yt-video-section1::-webkit-scrollbar, .yt-video-section2::-webkit-scrollbar {
-    display: none;
 }
 
 .yt-video0, .yt-video1, .yt-video2 {
