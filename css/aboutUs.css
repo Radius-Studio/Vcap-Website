@@ -173,10 +173,24 @@
     }
 }
 
-.footer {
+.footer-txt {
     color: white;
     font-size: 20px;
     text-align: center;
+    text-wrap: balance;
+}
+
+.footer-txt-box {
+    border-color: #FFF;
+    border: 2px solid rgb(255, 255, 255);
+    max-width: fit-content;
+    min-width: fit-content;
+    padding: 10px;
+}
+
+.footer {
+    display: grid;
+    align-items: space-around;
     padding-top:20px;
     padding-bottom: 30px;
     background-color: black;
