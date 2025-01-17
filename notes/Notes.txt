@@ -25,6 +25,7 @@ https://openjavascript.info/2021/09/02/create-a-rotating-image-carousel-with-use
 To Do:
 Publish to GitHub-pages
 Optimize organize and trim down code to be more professional - Adding more comments
+Make vertical scroll on about us and home page look professional
 -
 WIP:
 Style and add to the about us & home page
