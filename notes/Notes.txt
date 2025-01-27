@@ -24,15 +24,18 @@ https://openjavascript.info/2021/09/02/create-a-rotating-image-carousel-with-use
 
 To Do:
 Publish to GitHub-pages
-Optimize organize and trim down code to be more professional - Adding more comments
-Make vertical scroll on about us and home page look professional
+Adding more comments
+Add search function ?
+Documentation to run website
 -
 WIP:
-Style and add to the about us & home page
 Changing font
 Hamburger menu for a second page
 -
 Completed:
+Optimize organize and trim down code to be more professional
+Make vertical scroll on about us and home page look professional
+Style and add to the about us & home page
 Change splash screen elements
 Add carousel to wrapper and or video elements
 Section title auto updates with playlistId
