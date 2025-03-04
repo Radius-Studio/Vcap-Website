@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Drexel Vcap - Home</title>
-        <link href="/css/styles.css" rel="stylesheet">
+        <link href="/css/search.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script defer src="/javascript/searchPage.js"></script>
     </head>
@@ -27,6 +27,12 @@
                     <li><a class="menuItem" href="/HTML/aboutUs.html">About Us</a></li>
                 </ul>
 
+                <form id="myForm">
+                    <label for="userInput">Search Term:</label>
+                    <input type="text" id="userInput" name="userInput" required>
+                    <button type="button" onclick="search()">Submit</button>
+                </form>
+
                 <button class="hamburger">
                     <i class="menuIcon material-icons">menu</i>
                     <i class="closeIcon material-icons">close</i>
@@ -37,41 +43,21 @@
         </section>
 
         <div id="wrapper">
-
-            <form id="userForm">
-                <label for="userInput">Search Our Channel</label>
-                <input type="text" id="userSearch" name="userSearch">
-                <button type="button" onclick="search()">Search</button>
-            </form>
-
-            <script src="/javascript/search.js"></script>
             
             <!-- Scroll Bar -->
                 <section id="scroll-bar">
                     <div class="scroll-bar">
     
                         <section id="videos">
-                        
-                            <h3 class="recent-videos">Recent Videos</h3>
-                            <div class="yt-video-section"></div>
-    
-                            <div class="section-title"></div>
-                            <div class="yt-video-section0"></div>
-                            
-                            <div class="section-title1"></div>
-                            <div class="yt-video-section1"></div>
-    
-                            <div class="section-title2"></div>
-                            <div class="yt-video-section2"></div>
+
+                            <div id="search-placement"></div>
     
                         </section>
-                        
-                        
     
                     </div>
                 </section>
                 
-            </div>
+        </div>
 
     </body>
 

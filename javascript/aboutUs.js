@@ -25,3 +25,14 @@ menuItems.forEach(
         menuItem.addEventListener("click", toggleMenu);
     }
 )
+
+function search() {
+    const searchTerm = document.getElementById('userInput').value;
+    console.log(searchTerm);
+
+    if (typeof searchTerm === 'string' && searchTerm.trim() !== '') {
+        window.location.href = '/HTML/search.html?searchTerm=' + encodeURIComponent(searchTerm);
+    } else {
+        window.location.href = '/HTML/index.html';
+    }
+}

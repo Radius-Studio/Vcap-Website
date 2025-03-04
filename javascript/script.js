@@ -6,9 +6,9 @@ const dots = document.querySelector('#dots');
 const desc = document.querySelector('#desc');
 
 setTimeout(getVideos, 3000);
-loadScript('/javascript/script0.js');
-loadScript('/javascript/script1.js');
-loadScript('/javascript/script2.js');
+loadScript('/javascript/scriptRow1.js');
+loadScript('/javascript/scriptRow2.js');
+loadScript('/javascript/scriptRow3.js');
 
 function loadScript(url)
 {    
@@ -23,6 +23,7 @@ let speed = 3000;
 let index = 0;
 let intervalID;
 
+/* img Carousel */
 images.forEach((image, i) => {
     const span = document.createElement('span');
     span.className = 'dot';
@@ -113,4 +114,15 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
         console.log(err);
         videoSection.innerHTML = '<h3>Sorry somthing went wrong, try again later</h3>'
     });
+}
+
+function search() {
+    const searchTerm = document.getElementById('userInput').value;
+    console.log(searchTerm);
+
+    if (typeof searchTerm === 'string' && searchTerm.trim() !== '') {
+        window.location.href = '/HTML/search.html?searchTerm=' + encodeURIComponent(searchTerm);
+    } else {
+        window.location.href = '/HTML/index.html';
+    }
 }
