@@ -18,6 +18,7 @@
     border-radius: 10px;
 }
 
+
 /* Style sheet */
 
 .nav-bar {
@@ -398,7 +399,7 @@ to {opacity: 1;}
     position: fixed;
     z-index: 100;
     top: 1rem;
-    right: 1rem;
+    right: 5rem;
     padding: 4px;
     border: black solid 1px;
     background: white;
@@ -427,3 +428,29 @@ to {opacity: 1;}
   .showMenu {
     transform: translateY(0);
   }
+
+/* Search CSS */
+
+.search-label {
+    color: white;
+}
+
+.search-button {
+    margin-right: 65px;
+    margin-top: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.search-button:hover {
+    padding: 2px;
+    margin-top: 22px;
+    margin-right: 62px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(184, 180, 180);
+}
+
+.search-input {
+    border-radius: 5px;
+}
