@@ -116,13 +116,11 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
     });
 }
 
-function search() {
-    const searchTerm = document.getElementById('userInput').value;
-    console.log(searchTerm);
+const searchForm = document.getElementById('youtube-search');
 
-    if (typeof searchTerm === 'string' && searchTerm.trim() !== '') {
-        window.location.href = '/HTML/search.html?searchTerm=' + encodeURIComponent(searchTerm);
-    } else {
-        window.location.href = '/HTML/index.html';
-    }
-}
+searchForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent default form submission
+  let searchQuery = document.getElementById('search-input').value;
+  let youtubeUrl = `https://www.youtube.com/@DrexelUniversityVCaP/search?query=${searchQuery}`;
+  window.location.href = youtubeUrl;
+});

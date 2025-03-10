@@ -17,24 +17,25 @@
                 <div class="title">
                     <h1 anchor="nav-bar">Drexel VCAP</h1>
                 </div>
-                <img class="logo" src="/images/Drexel-Dragons-Logo.png" alt="Drexel Dragons Logo">
+                <!--<img class="logo" src="/images/Drexel-Dragons-Logo.png" alt="Drexel Dragons Logo">-->
 
-                <form id="myForm">
-                    <label for="userInput">Search Term:</label>
-                    <input type="text" id="userInput" name="userInput" required>
-                    <button type="button" onclick="search()">Submit</button>
+                <form id="youtube-search">
+                    <button class="search-button" type="submit"><img class ="search-symbol" src="/Images/find.png"></button>
+                    <input class="search-input" type="text" id="search-input" placeholder="Search YouTube..." required>             
                 </form>
 
-                <ul class="menu">
-                    <li><a class="menuItem" href="/HTML/index.html">Home</a></li>
-                    <li><a class="menuItem" href="/HTML/aboutUs.html">About Us</a></li>
-                </ul>
-                <button class="hamburger">
-                    <i class="menuIcon material-icons">menu</i>
-                    <i class="closeIcon material-icons">close</i>
-                </button>
-
             </div>
+        </section>
+
+        <section id="dropdownMenu">
+            <ul class="menu">
+                <li><a class="menuItem" href="/HTML/index.html">Home</a></li>
+                <li><a class="menuItem" href="/HTML/aboutUs.html">About Us</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
         </section>
         
         <div class="spacer"></div>

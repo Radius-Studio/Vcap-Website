@@ -403,7 +403,7 @@ to {opacity: 1;}
   .hamburger {
     position: fixed;
     z-index: 8;
-    top: 1rem;
+    top: 15px;
     right: 5rem;
     padding: 4px;
     border: black solid 1px;
@@ -438,26 +438,74 @@ to {opacity: 1;}
 
 /* Search CSS */
 
-.search-label {
-    color: white;
-}
-
 .search-button {
-    margin-right: 65px;
-    margin-top: 25px;
     color: white;
     background-color: rgba(0, 0, 0, 0);
-}
-
-.search-button:hover {
-    padding: 2px;
-    margin-top: 22px;
-    margin-right: 62px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: rgb(184, 180, 180);
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 .search-input {
+    background-color: rgb(37, 38, 51);
     border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    padding: 7px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 375px;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+::placeholder {
+    color: white;
+}
+
+.search-symbol {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(63deg) brightness(107%) contrast(103%);
+}
+
+#youtube-search {
+    display: flex;
+    margin-right: 65px;
+}
+
+@media screen and (max-width: 830px) {
+    .search-input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .search-input {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-input {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hamburger {
+        right: 1rem;
+        top: 12px;
+    }
+    .menu {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 308px) {
+    .search-symbol {
+        display: none;
+    }
 }
