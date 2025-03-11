@@ -51,39 +51,4 @@ About us page with request our services link to the ticket system
 
 Backup Searchbar function css and html:
 
-HTML:
-<form id="youtube-search">
-    <input type="text" id="search-input" placeholder="Search YouTube...">
-    <button type="submit">Search</button>                    
-</form>
-
-CSS:
-#youtube-search {
-display: flex;
-margin-top: 10px;
-  
-}
-  
-#search-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-  
-}
-  
-button[type="submit"] {
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-JavaScript:
-const searchForm = document.getElementById('youtube-search');
-
-searchForm.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent default form submission
-  let searchQuery = document.getElementById('search-input').value;
-  let youtubeUrl = `https://www.youtube.com/results?search_query=${searchQuery}`;
-  window.location.href = youtubeUrl;
-});
+DWUIDBIDBDWI
