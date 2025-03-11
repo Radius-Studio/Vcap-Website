@@ -23,10 +23,16 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe (Iframe permiss
 https://openjavascript.info/2021/09/02/create-a-rotating-image-carousel-with-user-controls/ (Splashscreen carousel)
 
 To Do:
-Publish to GitHub-pages
+Switch catch error on js functions to run defaut home page
+Livestream Page
+    - Current livestream box
+    - Recent livestream row
+Fix resizing on about us page
+Finalize pictures
+Switch promo video
 Adding more comments
-Add search function ?
 Documentation to run website
+Publish to GitHub-pages
 -
 WIP:
 Changing font
@@ -47,43 +53,3 @@ All font shrinks when page gets smaller
 Fix loading bar to load over every video element individually *not done, not needed
 Horizontal scrolling without bars or shortcut commands
 About us page with request our services link to the ticket system
-
-
-Backup Searchbar function css and html:
-
-HTML:
-<form id="youtube-search">
-    <input type="text" id="search-input" placeholder="Search YouTube...">
-    <button type="submit">Search</button>                    
-</form>
-
-CSS:
-#youtube-search {
-display: flex;
-margin-top: 10px;
-  
-}
-  
-#search-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-  
-}
-  
-button[type="submit"] {
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-JavaScript:
-const searchForm = document.getElementById('youtube-search');
-
-searchForm.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent default form submission
-  let searchQuery = document.getElementById('search-input').value;
-  let youtubeUrl = `https://www.youtube.com/results?search_query=${searchQuery}`;
-  window.location.href = youtubeUrl;
-});
