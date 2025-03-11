@@ -28,15 +28,13 @@ Livestream Page
     - Current livestream box
     - Recent livestream row
 Fix resizing on about us page
+Change font
 Finalize pictures
 Switch promo video
 Adding more comments
 Documentation to run website
 Publish to GitHub-pages
--
-WIP:
-Changing font
-Hamburger menu for a second page
+
 -
 Completed:
 Optimize organize and trim down code to be more professional
