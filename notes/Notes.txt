@@ -23,11 +23,11 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe (Iframe permiss
 https://openjavascript.info/2021/09/02/create-a-rotating-image-carousel-with-user-controls/ (Splashscreen carousel)
 
 To Do:
-Switch catch error on js functions to run defaut home page
 Livestream Page
     - Current livestream box
-    - Recent livestream row
+    - Recent livestreams row
 Fix resizing on about us page
+Switch catch error on js functions to run defaut home page --> test to make sure it works
 Change font
 Finalize pictures
 Switch promo video
