@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Drexel Vcap</title>
-        <link href="/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script defer src="/javascript/script.js"></script>
-    </head>
-    
-    <body>
-        <!-- Navigation Bar -->
-        <section id="nav-bar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drexel Vcap</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="javascript/script.js"></script>
+</head>
 
-            <div class="nav-bar">
+<body>
+    <!-- Navigation Bar -->
+    <section id="nav-bar">
+        <div class="nav-bar">
+            <div class="title">
+                <h1 anchor="nav-bar">Drexel VCAP</h1>
+            </div>
+            <!-- <img class="logo" src="images/Drexel-Dragons-Logo.png" alt="Drexel Dragons Logo"> -->
+            <form id="youtube-search">
+                <button class="search-button" type="submit"><img class="search-symbol" src="Images/find.png"></button>
+                <input class="search-input" type="text" id="search-input" placeholder="Search YouTube..." required>
+            </form>
+        </div>
+    </section>
 
-                <div class="title">
-                    <h1 anchor="nav-bar">Drexel VCAP</h1>
-                </div>
-                <!-- <img class="logo" src="/images/Drexel-Dragons-Logo.png" alt="Drexel Dragons Logo"> -->
-                <form id="youtube-search">
-                    <button class="search-button" type="submit"><img class ="search-symbol" src="/Images/find.png"></button>
-                    <input class="search-input" type="text" id="search-input" placeholder="Search YouTube..." required>             
-                </form>
-    
+    <section id="dropdownMenu">
+        <ul class="menu">
+            <li><a class="menuItem" href="index.html">Home</a></li>
+            <li><a class="menuItem" href="livestreams.html">Livestreams</a></li>
+            <li><a class="menuItem" href="aboutUs.html">About Us</a></li>
+        </ul>
+        <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+        </button>
+    </section>
+
+    <section id="splash-screen">
+        <!-- carousel -->
+        <main id="carousel">
+            <section id="img-items">
+                <div class="gradient-90deg"></div>
+                <div class="gradient-0deg"></div>
+                <img src="images/PeopleWalkingJapan.jpg" data-desc="Group of people walking in Japan" class="active">
+                <img src="images/1747-Map.jpg" data-desc="Just an old map from 1747">
+                <img src="Images/drexel-banner.png" data-desc="Drexel Banner">
+            </section>
+
+            <div id="nav">
+                <div id="desc"></div>
+                <div id="dots"></div>
+            </div>
+        </main>
+    </section>
+
+    <!-- videos -->
+    <div id="wrapper">
+        <!-- Scroll Bar -->
+        <section id="scroll-bar">
+            <div class="scroll-bar">
+                <section id="videos">
+                    <h3 class="recent-videos">Recent Videos</h3>
+
+                    <div class="loader-box">
+                        <div class="loader"></div>
+                    </div>
+
+                    <div class="yt-video-section"></div>
+
+                    <div class="section-title"></div>
+                    <div class="yt-video-section0"></div>
+
+                    <div class="section-title1"></div>
+                    <div class="yt-video-section1"></div>
+
+                    <div class="section-title2"></div>
+                    <div class="yt-video-section2"></div>
+                </section>
             </div>
         </section>
+    </div>
+</body>
 
-        <section id="dropdownMenu">
-            <ul class="menu">
-                <li><a class="menuItem" href="/index.html">Home</a></li>
-                <li><a class="menuItem" href="/livestreams.html">Livestreams</a></li>
-                <li><a class="menuItem" href="/aboutUs.html">About Us</a></li>
-            </ul>
-            <button class="hamburger">
-                <i class="menuIcon material-icons">menu</i>
-                <i class="closeIcon material-icons">close</i>
-            </button>
-        </section>
-        
-        <section id="splash-screen">
+<footer>
+    <div class="footer">
+        <p class="footer-txt">YouTube Channel</p>
+        <p class="footer-txt">2024 &copy; Drexel VCAP</p>
+    </div>
+</footer>
 
-            <!-- carousel -->
-            <main id="carousel">
-
-                <section id="img-items">
-
-                    <div class="gradient-90deg"></div>
-                    <div class="gradient-0deg"></div>
-                    <img src="/images/PeopleWalkingJapan.jpg" data-desc="Group of people walking in Japan" class="active">
-                    <img src="/images/1747-Map.jpg" data-desc="Just an old map from 1747">
-                    <img src="/Images/drexel-banner.png" data-desc="Drexel Banner">
-
-                </section>
-                
-                <div id="nav">
-                    <div id="desc"></div>
-                    <div id="dots"></div>
-                </div>
-                
-            </main>
-        </section>
-
-        <!-- videos -->
-        <div id="wrapper">
-
-        <!-- Scroll Bar -->
-            <section id="scroll-bar">
-                <div class="scroll-bar">
-
-                    <section id="videos">
-                    
-                        <h3 class="recent-videos">Recent Videos</h3>
-
-                        <div class="loader-box">
-                            <div class="loader"></div>
-                        </div>
-                        
-                        <div class="yt-video-section"></div>
-
-                        <div class="section-title"></div>
-                        <div class="yt-video-section0"></div>
-                        
-                        <div class="section-title1"></div>
-                        <div class="yt-video-section1"></div>
-
-                        <div class="section-title2"></div>
-                        <div class="yt-video-section2"></div>
-
-                    </section>
-                    
-                    
-
-                </div>
-            </section>
-            
-        </div>
-    </body>
-
-    <footer>
-
-        <div class="footer">
-            <p class="footer-txt">YouTube Channel</p>
-            <p class="footer-txt">2024 &copy; Drexel VCAP</p>
-        </div>
-        
-    </footer>
-    
 </html>
