@@ -6,9 +6,9 @@ const dots = document.querySelector('#dots');
 const desc = document.querySelector('#desc');
 
 setTimeout(getVideos, 3000);
-loadScript('/javascript/scriptRow1.js');
-loadScript('/javascript/scriptRow2.js');
-loadScript('/javascript/scriptRow3.js');
+loadScript('javascript/scriptRow1.js');
+loadScript('javascript/scriptRow2.js');
+loadScript('javascript/scriptRow3.js');
 
 function loadScript(url)
 {    
