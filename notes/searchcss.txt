@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+*::-webkit-scrollbar {
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ddd;
+    justify-content: center;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+/* Style sheet */
+
+.nav-bar {
+    background-color: rgb(37, 38, 51);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    border-radius: 0px 0px 10px 10px;
+    position: fixed;
+    left: 60px;
+    right: 60px;
+    z-index: 10;
+    min-width: max-content;
+}
+
+@media screen and (max-width: 660px) {
+    .nav-bar {
+        left: 0px;
+        right: 0px;
+        border-radius: 0px;
+    }
+}
+
+.title {
+    color: rgba(232, 240, 240, 1);
+    padding: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+    .title {
+        color: rgba(232, 240, 240, 1);
+        padding: 20px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
+.service-request {
+    color: rgba(232, 240, 240, 1);
+    background-color: rgba(232, 240, 255, 0.3);
+    padding: 5px 10px 5px 10px;
+    margin: 15px 20px 15px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 660px) {
+    .service-request {
+        color: rgba(232, 240, 240, 1);
+        padding: 5px 10px 5px 10px;
+        margin: 15px 20px 15px 10px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
+.service-request:hover {
+    background-color: rgba(232, 240, 240, 0.5);
+    color: black;
+    transform: scale(1.08);
+}
+
+.req-ser-link {
+    color: rgba(232, 240, 240, 1);
+}
+
+.logo {
+    max-width: 95px;
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 660px) {
+    .logo {
+        padding-top: 5px;
+        max-width: 65px;
+        max-height: 40px;
+        margin-right: 10px;
+    }
+}
+
+.scroll-bar{
+    overflow-y: 400px;
+}
+
+/* Body */
+#wrapper {
+    padding-left:60px;
+    padding-right: 60px;
+    padding-top: 4px;
+    background-color: hsl(240, 20%, 5%);
+    height: 1000px;
+}
+
+.search-placement {
+    overflow:hidden;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+.search-placement::-webkit-scrollbar {
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ddd;
+    justify-content: center;
+}
+
+.search-placement::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+@media screen {
+    .search-placement:hover::-webkit-scrollbar {
+        min-height: 12px;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .search-placement::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.yt-video {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-width: 300px;
+    min-height: 169px;
+    border-radius: 15px;
+    flex-grow: 3;
+    flex-shrink: .3;
+    cursor: pointer; 
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.yt-video:hover {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* CSS for hamburger menu */
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 100;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+
